@@ -17,7 +17,7 @@ class Route
   # instantiate controller and call controller action
   def run(req, res)
     controller = ControllerBase(req, res)
-    
+    invoke_action(@action_name)
   end
 end
 
